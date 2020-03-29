@@ -1,0 +1,4 @@
+For mounting with read-write = sudo mount -o remount,rw '/media/uuid'
+For start tomcat server = sudo sh $CATALINA_HOME/bin/startup.sh
+For starting android studio = sudo sh ~/android-studio/bin/studio.sh
+ 

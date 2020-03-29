@@ -1,0 +1,55 @@
+To work with github:
+
+step 1: Create a repository in github
+
+step 2: install git in the local machine
+
+step 3: make a local repository by using the command "git init" in the required folder
+
+step 4: use the command "git remote add origin "ur repository download link"" to connect to your github
+
+step 5: now pull all the files in the repository using "git pull origin master(branch)"
+
+step 6: Now create or add whatever u need to be adding to repository in local repository folder
+
+step 7: Now check the status of the local repo using "git status" which gives the folders and files which are modified or Created newly
+
+step 8: Now add the things u Created to the git index by using "git add 'yourfile'"
+
+step 9: U can add all the files to the git index at one go using "git add -A" command.
+
+step 10: Now commit the files to the local repository by "git commit -m "your message (or) description of the changes"" (or) for adding all the files use "git commit -a -m "your message (or) description of the changes""
+
+step 11: Use "git log" to get the reports of when the commits are made.
+
+Note: Branches are used to create a new features to and finally add it to the master branch
+
+step 12: To create a local branch use "git branch branch_name"
+
+step 13: Now switch to that branch by "git checkout branch_name"
+
+Note: The branch contains all the files  from the master branch as it is a branch , But the inverse is not true when the files is committed to the drived branch_name
+
+step 14: Add files to the branch and commit and switch to master branch by "git checkout master"
+
+Note: Always checkout to destination branch(master) before mergeing the Branches
+
+step 15: Merge the branch by "git merge branch_name"
+
+Note: Even you the Branches the derived branch exists
+
+step 16: If to make the complete repository linear without any Branches use rebasing by"git rebase branch_name"
+
+step 17: Now add your repository ssh url to the git by "git remote set-url origin git@github.com:username/repo.git"
+
+step 18: Now generate a ssh key by "ssh-keygen -t rsa -b 4096 -C "your email id"" and add it to the ssh-agent by starting ssh agent "eval "$(ssh-agent -s)" and by "ssh-add ~/.ssh/id_rsa"
+
+step 19: Add your ssh key to your github by copying contents in id_rsa.pub
+
+step 20: create a config file in .ssh folder with contents"Host github.com '/n' Hostname ssh.github.com '/n' Port 443"
+
+step 21: Autheticate your ssh by "ssh -T git@github.com"
+
+step 22: Now push to github by "git push origin branch_name"
+
+step 23: If u want revert back a file use "git checkout 'hashcode of the commit' file_name"
