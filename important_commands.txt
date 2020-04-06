@@ -1,4 +1,13 @@
 For mounting with read-write = sudo mount -o remount,rw '/media/uuid'
+
 For start tomcat server = sudo sh $CATALINA_HOME/bin/startup.sh
+
 For starting android studio = sudo sh ~/android-studio/bin/studio.sh
- 
+
+For installing a program = sudo apt install "program name"
+
+For updating existing packages = sudo apt-get update
+
+For unistalling a program =  sudo apt-get --purge remove "program name"
+
+For autoremoving uncessary things = sudo apt autoremove
