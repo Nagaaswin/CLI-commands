@@ -1,0 +1,8 @@
+Step 1: Enter "lsblk" which displays all the attached devices.
+
+Step 2: Enter "sudo umount /dev/sdb1" replace the sdb by the device id shown by lsblk command.
+
+Step 3: Use "sudo dd bs=4M if=kali.iso of=/dev/sdb1 status=progress oflag=sync" this makes the drive bootable by copying the contents of if to of location.
+Where ,bs - is the amount bytes read and write upto a time
+       status - gives the progress of the copying
+       oflag - write as per the comma separated symbol list
