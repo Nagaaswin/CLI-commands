@@ -1,0 +1,11 @@
+Installing Maven for java compilation and packaging
+
+Step 1: install maven using "sudo apt install maven"
+
+Note: clone a project by git clone url
+
+Step 2: go into directory of the created project folder or cloned project folder
+
+Step 3: Compile the project by using "mvn compile"
+
+Ste 4: Package the project into war file by "mvn Package"
