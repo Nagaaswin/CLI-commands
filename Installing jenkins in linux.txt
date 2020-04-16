@@ -1,0 +1,17 @@
+Installation of Jenkins in Linux or Cloud
+
+Step 1: Add the repository to your system by using "wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -"
+
+Step 2: use "sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'"
+
+Step 3: get updates of existing softwares by using "Sudo apt-get update"
+
+Step 4: Install jenkins by using "sudo apt-get install jenkins"
+
+Step 5: Check the status of the jenkins by "service jenkins status"
+
+Step 6: Signin into 8080 port for using jenkins in local computer use "localhost:8080/" (or) in cloud use "ip:8080"
+
+Step 7: Get the admin Signin password by copying the directory and using "sudo cat directory"
+
+Step 8: After logining choose suggested plugin for intsalling.
