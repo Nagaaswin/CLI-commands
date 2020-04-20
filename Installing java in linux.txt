@@ -1,0 +1,7 @@
+Installing java for ubuntu using terminal
+
+Step 1: Open terminal with "ctrl+alt+t"
+
+Step 2: run "sudo apt install java default-jre"
+
+Step 3: Run "java --version" to check java is properly installed 

@@ -1,0 +1,27 @@
+To Create a desktop icon and add it application draw for a application like eclipse.
+
+Step 1: Open the text editor and Create a file with ".desktop" extension
+
+Step 2: Now add the following contents.
+"#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/home/naga/eclipse/jee-2019-12/eclipse/eclipse
+Name=Eclipse IDE
+Comment=Eclipse for java
+Icon=/home/naga/eclipse/jee-2019-12/eclipse/icon.xpm
+Categories=Development;"
+
+Step 3: Now alter according to your need and save it and copy to desktop.
+
+Step 4: Now right click and allow launching to make it as a shortcut.
+
+Step 5: Now Copy the file to "usr/share/applications" with sudo rights in Terminal.
+                            (or)
+        In Terminal cd to the location above and run "sudo vim name.desktop"
+
+Step 6: Now copy paste the contents of the desktop file and save by ":wq"
+
+Step 7: Now the application is added to the app draw.
