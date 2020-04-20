@@ -1,0 +1,17 @@
+Step 0: Create a minimum of 100gb unallocated space.
+
+Step 1: Create a usb bootable disk using universal usb installer "https://universalusbinstaller.com/Universal-USB-Installer-1.9.8.2.exe"
+
+Step 2: now boot in to the usb drive from bios
+
+Step 3: Select the language and keyboard layout
+
+Step 4: select the other option for creating partition on your.
+
+Step 5: First create a partition using the "+" and allocate 20gb and specify the mount point as "/" and type as ext4
+
+Step 6: Now create a second partition with size of 4 gb and type as swap. As this is optional space used as memory when physical memory limited out.
+
+Step 7: Now create the balance space as a partition and type as ext4 and mount point as "/home"
+
+Step 8: Specify your details and thats all once intsallation completes reboot and enjoy!!.
