@@ -1,0 +1,11 @@
+Installing tomcat server in linux and linking with eclipse and mysql database
+
+Step 1: Download the offical tomcat server from the tomcat website.
+
+Step 2: extract the folder in required directory
+
+Step 3: Go to eclipse specify the server location in window->preference->server->runtime environment.
+
+Step 4: Download the jdbc connector jar from mysql website and paste it in the tomcat->lib directory
+
+Step 5: Start the server in eclipse or directly from the linux
