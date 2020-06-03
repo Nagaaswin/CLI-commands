@@ -1,0 +1,11 @@
+Creating and Restoring Sql backup from database_name.Sql
+
+Step 1: Create an backup of an existing database by "mysqldump -u [user] -p --opt [database_name] > database_name.sql"
+
+Note: for transfering all databases use "mysqldump -u [user] -p --all-databases > all_databases.sql"
+
+Step 2: Now transfer the sql file to the new server or system home location.
+
+Step 3: Now Create an database with same name as the existing [database_name] using "create database [database_name];".
+
+Step 4: Now import the sql data by "mysql -u [user] -p [database_name] < database_name.sql"

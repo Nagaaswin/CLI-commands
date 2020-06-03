@@ -5,3 +5,5 @@ Step 1: Visit the mysql offical website and add the apt repository
 Step 2: Now install using sudo apt-get install mysql
 
 Step 3: Now download the workbench version from the website and install
+
+Step 4: Download the jdbc connector and install it.
