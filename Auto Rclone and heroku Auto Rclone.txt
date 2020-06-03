@@ -1,0 +1,44 @@
+Auto Rclone:
+
+    Step 1: Install prerequisties "Sudo apt-get install screen git && curl https://rclone.org/install.sh | sudo bash"
+
+    Step 2: Install python installer "sudo apt-get pip3"
+
+    Step 3: Clone the github project and install dependencies "sudo git clone https://github.com/The-Decimator/ARC.git && cd ARC && sudo pip3 install -r requirements.txt"
+
+Note: For Windows: download git project and latest rclone and run pip3 install -r requirements.txt
+
+    Step 4: Services accounts are already generated in this project if Not: (in google drive download and extract the tar.gz file(step 9 of below))
+            i) Enable the Drive Api in https://developers.google.com/drive/api/v3/quickstart/python and save the credientials.json and create a folder named "accounts".
+            ii) Download the credientials into project folder and then run "python3 gen_sa_accounts.py --quick-setup -1"
+            iii) Now either create a google groups and add all the service accounts to it(10 max at a time) (or) add the service accounts to the TeamDrive Directly.
+            iv) To add all the service accounts to TeamDrive run "python3 add_to_team_drive.py -d SharedTeamDriveSrcID" you should also add the serviceIds to the destination TeamDrive.
+            v) In case using groups add the groups to source and destination TeamDrive.
+
+    Step 5: Now run the command to copy datas from sourceId folder to destinationId folder "python3 rclone_sa_magic.py -s SourceID -d DestinationID -b 1 -e 600"
+
+Auto Rclone in Server(Heroku):
+
+    Step 1: For Heroku first run all the step 1-4 of Auto Rclone in pc and generate SA's
+
+    Step 2: Now compress the accounts folder using "tar -zcvf accounts.tar.gz accounts"
+
+    Step 3: now commit and push to git github.
+
+    Step 4: Now create a Heroku deployment button in project readme using "[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)"
+
+    Step 5: The app.json file contains the buildpacks required for Heroku app and name of the Heroku app. Edit it as required.
+
+    Step 6: Now click the deploy button and deploy it to the Heroku app prefer(Europe Server).
+
+    Step 7: Now Run "heroku login" and use your credientials and login.
+
+    Step 8: Now clone the repo to your machine by "heroku git:clone -a autorclone" and cd into it "cd autorclone".
+
+    Step 9: Now run "heroku run bash" to run terminal in heroku.
+
+    Step 10: Now run "wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1Lfh6bLQRziQPyp8EyARxiP34KLAma4F2' -O accounts.tar.gz"
+
+    Step 11: Now run "tar -xvzf accounts.tar.gz" to extract the tar file.
+
+    Step 12: Now Step 5 of Auto Rclone to copy the contents.
